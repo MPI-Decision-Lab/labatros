@@ -3,6 +3,7 @@
 
 import psutil
 import subprocess
+import webbrowser
 
 def process_exists(name):
     """ Checks if a process with the name starts with the input string exists
@@ -115,5 +116,7 @@ def print_hi(myname, times):
   
 def print_hello(myname, times):
     print( myname + " hello " * times)
-	
+
+def open_url(url):
+    webbrowser.open(url,1)
 
