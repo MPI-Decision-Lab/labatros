@@ -3,7 +3,7 @@
 import socket
 import pickle
 
-hosts = ['127.0.0.1', '127.0.0.1']
+hosts = ['127.0.0.1', '192.168.75.132']
 specs_list = [{"keyword": "rabbit", "website": "nature.com", "clientno": "client21"},{"keyword": "mouse", "website": "science.com", "clientno": "client21"}]
 port = 65432
 
@@ -66,7 +66,7 @@ zleaf_command = ["run_zleaf", {"clientno": "{clientno}"}]
 url_command = ["open_url", {"url": "https://www.google.com/search?q={keyword}&as_sitesearch={website}"}]
 stream_command(url_command,hosts, machinespecs = specs_list)
 
-dist_command_udp(url_command,hosts, machinespecs = specs_list)
+dist_command_tcp(url_command,hosts, machinespecs = specs_list)
 
 
 myspecs

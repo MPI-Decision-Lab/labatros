@@ -52,5 +52,3 @@ while True:
   #    print("somebody asked me something that i dont understand")
    # Close the connection with the client 
    c.close() 
-
-
