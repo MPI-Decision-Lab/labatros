@@ -1,7 +1,7 @@
 from subject_funs import *
 import argparse
 import json  # (for the string to dictionary conversion)
-from inspect import signature
+from inspect import signature  # (to get the signature of a function)
 
 FUNCTION_MAP = {'print_hi': print_hi,
                 'print_hello': print_hello,
@@ -11,10 +11,10 @@ FUNCTION_MAP = {'print_hi': print_hi,
                 'open_url': open_url}
 
 
-# create a string for the help that lists function names together with the arguments this function requires:
+# create a string for the help page that lists function names together with the arguments this function requires:
 args_str = ""
 for fun in FUNCTION_MAP:
-    args_str += fun + ": " + str(signature(FUNCTION_MAP[fun])) + "\n"
+    args_str += fun + str(signature(FUNCTION_MAP[fun])) + "\n"
 
 
 # create a parser object:
@@ -35,6 +35,7 @@ func(**params)  # call function
 # example call: python3 command_line.py print_hi -d '{"myname":"Annika","times":3}'
 # python3 command_line.py -h will display help for this file.
 #   Below "positional arguments" it will display the set of possible function names
-#   and below this the list of function name together with argument keywords this function requires.
+#   and below this the list of function name together with argument keywords (and default values if specified)
+#   this function requires.
 
 
