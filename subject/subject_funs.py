@@ -6,7 +6,7 @@ import subprocess
 import webbrowser
 
 def process_exists(name):
-    """ Checks if a process with the name starts with the input string exists
+    """  Checks if a process with the name starts with the input string exists
 
     Args:
         name: Name of the process to be looked up
@@ -116,22 +116,6 @@ def print_hi(myname, times):
   
 def print_hello(myname, times):
     print( myname + " hello " * times)
-
-
-def print_hi2(myname):
-    print(myname + "hi ")
-
-
-def print_hello2(myname):
-    print(myname + " hello ")
-
-
-def print_hi3():
-    print("hi ")
-
-
-def print_hello3():
-    print(" hello ")
 
 def open_url(url):
     webbrowser.open(url,1)
