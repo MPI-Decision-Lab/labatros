@@ -1,3 +1,5 @@
+**Warning: This project is at the early development stage. Please do not use the code for production. Contributions are welcomed, especially from experimental social sciences labs. If you'd like to get to know about the project please send an email to saral@coll.mpg.de***
+
 # labatros
 A family of room control scripts for experimental economics labs
 
